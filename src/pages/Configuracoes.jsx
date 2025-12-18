@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 import HeaderAuth from '../components/Layout/HeaderAuth';
 import Sidebar from '../components/Layout/Sidebar';
 import Footer from '../components/Layout/Footer';
@@ -79,7 +80,7 @@ const Configuracoes = () => {
   };
 
   const handleSavePerfil = () => {
-    alert('Perfil salvo com sucesso!');
+    toast.success('Perfil salvo com sucesso!');
   };
 
   const handleCancelPerfil = () => {
@@ -99,7 +100,7 @@ const Configuracoes = () => {
   };
 
   const handleSaveNotificacoes = () => {
-    alert('Preferências de notificação salvas!');
+    toast.success('Preferências de notificação salvas!');
   };
 
   // Handlers Segurança
@@ -111,23 +112,23 @@ const Configuracoes = () => {
   const handleChangePassword = (e) => {
     e.preventDefault();
     if (seguranca.newPassword !== seguranca.confirmPassword) {
-      alert('As senhas não conferem!');
+      toast.error('As senhas não conferem!');
       return;
     }
     if (seguranca.newPassword.length < 8) {
-      alert('A senha deve ter no mínimo 8 caracteres!');
+      toast.error('A senha deve ter no mínimo 8 caracteres!');
       return;
     }
-    alert('Senha alterada com sucesso!');
+    toast.success('Senha alterada com sucesso!');
     setSeguranca({ currentPassword: '', newPassword: '', confirmPassword: '' });
   };
 
   const handleEnable2FA = () => {
-    alert('Autenticação em dois fatores ativada!');
+    toast.success('Autenticação em dois fatores ativada!');
   };
 
   const handleRevokeSession = (id) => {
-    alert(`Sessão #${id} encerrada!`);
+    toast.success(`Sessão #${id} encerrada!`);
   };
 
   // Handlers Sistema
@@ -137,23 +138,23 @@ const Configuracoes = () => {
   };
 
   const handleSaveSistema = () => {
-    alert('Preferências do sistema salvas!');
+    toast.success('Preferências do sistema salvas!');
   };
 
   const handleExportData = () => {
-    alert('Seus dados foram exportados para download!');
+    toast.success('Seus dados foram exportados para download!');
   };
 
   const handleDeactivateAccount = () => {
     if (window.confirm('Tem certeza que deseja desativar sua conta? Você poderá reativá-la a qualquer momento.')) {
-      alert('Conta desativada com sucesso!');
+      toast.success('Conta desativada com sucesso!');
     }
   };
 
   const handleDeleteAccount = () => {
     if (window.confirm('AVISO: Esta ação é irreversível e excluirá todos os seus dados. Tem certeza?')) {
       if (window.confirm('Esta é sua última chance. Seus dados serão permanentemente deletados.')) {
-        alert('Sua conta foi excluída permanentemente.');
+        toast.success('Sua conta foi excluída permanentemente.');
         navigate('/login');
       }
     }

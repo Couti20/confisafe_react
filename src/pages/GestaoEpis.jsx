@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 import HeaderAuth from '../components/Layout/HeaderAuth';
 import Sidebar from '../components/Layout/Sidebar';
 import Footer from '../components/Layout/Footer';
@@ -99,7 +100,7 @@ const GestaoEpis = () => {
 
   const handleReturnEPI = (id) => {
     setLoans(loans.filter(l => l.id !== id));
-    alert('Devolução registrada com sucesso!');
+    toast.success('Devolução registrada com sucesso!');
   };
 
   const handleReportLost = (id) => {
@@ -108,19 +109,19 @@ const GestaoEpis = () => {
       setLostItems([...lostItems, { ...lost, days: 23, note: 'Marcado como perdido' }]);
       setLoans(loans.filter(l => l.id !== id));
     }
-    alert('EPI marcado como perdido.');
+    toast.error('EPI marcado como perdido.');
   };
 
   const handleSendReminder = (id) => {
-    alert(`Lembrete enviado para o funcionário!`);
+    toast.success('Lembrete enviado para o funcionário!');
   };
 
   const handleViewLoanDetails = (id) => {
-    alert(`Detalhes do empréstimo #${id}`);
+    toast('Detalhes do empréstimo #' + id, { icon: '📋' });
   };
 
   const handleOpenLoanModal = () => {
-    alert('Abrir modal de novo empréstimo');
+    toast('Funcionalidade em desenvolvimento', { icon: '🚧' });
   };
 
   const handleViewLostItems = () => {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import toast from 'react-hot-toast';
 import HeaderAuth from '../components/Layout/HeaderAuth';
 import Sidebar from '../components/Layout/Sidebar';
 import Footer from '../components/Layout/Footer';
@@ -100,16 +101,16 @@ const Funcionarios = () => {
     try {
       if (editingId) {
         await usuarioService.atualizar(editingId, formData);
-        alert('Funcionário atualizado com sucesso!');
+        toast.success('Funcionário atualizado com sucesso!');
       } else {
         await usuarioService.criar(formData);
-        alert('Funcionário criado com sucesso!');
+        toast.success('Funcionário criado com sucesso!');
       }
       await carregarFuncionarios();
       handleCloseModal();
     } catch (error) {
       console.error('Erro ao salvar funcionário:', error);
-      alert(error.message || 'Erro ao salvar funcionário.');
+      toast.error(error.message || 'Erro ao salvar funcionário.');
     }
   };
 
@@ -120,11 +121,11 @@ const Funcionarios = () => {
 
     try {
       await usuarioService.remover(id);
-      alert('Funcionário deletado com sucesso!');
+      toast.success('Funcionário deletado com sucesso!');
       await carregarFuncionarios();
     } catch (error) {
       console.error('Erro ao deletar funcionário:', error);
-      alert(error.message || 'Erro ao deletar funcionário.');
+      toast.error(error.message || 'Erro ao deletar funcionário.');
     }
   };
 

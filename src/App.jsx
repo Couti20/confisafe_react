@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
 import PrivateRoute from './components/PrivateRoute';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
@@ -20,6 +21,28 @@ import './styles/base.css';
 function App() {
   return (
     <Router>
+      {/* Toast Notifications - Aparece em todas as páginas */}
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: '#1a202c',
+            color: '#fff',
+            borderRadius: '12px',
+            padding: '16px',
+            fontSize: '14px',
+          },
+          success: {
+            iconTheme: { primary: '#00a454', secondary: '#fff' },
+            style: { background: '#0d3320', border: '1px solid #00a454' },
+          },
+          error: {
+            iconTheme: { primary: '#ef4444', secondary: '#fff' },
+            style: { background: '#3b1219', border: '1px solid #ef4444' },
+          },
+        }}
+      />
       <Routes>
         {/* Rotas Públicas */}
         <Route path="/login" element={<Login />} />
