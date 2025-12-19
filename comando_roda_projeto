@@ -1,8 +1,9 @@
 
 ==COMANDO PARA RODAR O BACKEND-PARA POWERSHELL E DIFERENTE==
 
-cd ~/Documents/confi_safe_react/frontend_compl/backend && mvn spring-boot:run
-
+// cd ~/Documents/confi_safe_react/frontend_compl/backend && mvn spring-boot:run
+cd backend && mvn spring-boot:run
 
 ==EM SEGUINDA SO RODAR==
-NPM START 
+// NPM START 
+cd frontend && npm install && npm start
