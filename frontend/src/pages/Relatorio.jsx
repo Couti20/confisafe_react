@@ -29,6 +29,7 @@ const Relatorio = () => {
       iconBg: 'kpi-icon--blue',
       progress: 92
     },
+    
     {
       id: 'excecoes',
       title: 'Exceções Registradas',
