@@ -23,14 +23,15 @@
   --text: var(--text-dark);
   --text-muted: #555;
   --text-light: #666;
+  --text-secondary: #1a1a1a;
 
-  --bg: #f5f7fa;
-  --background: #f4f7fb;
+  --bg: #f0f2f5;
+  --background: #f0f2f5;
   --white: #ffffff;
   --border: #e0e0e0;
 
   /* Gradientes */
-  --body-gradient: linear-gradient(135deg, var(--primary-dark), var(--primary-light));
+  --body-gradient: #f0f2f5;
 
   /* === Layout === */
   --navbar-height: 64px;

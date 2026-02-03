@@ -150,7 +150,7 @@ const Relatorio = () => {
       title: 'Relatório de EPIs',
       description: 'Análise completa de conformidade e uso de equipamentos',
       lastUpdate: 'Hoje, 15:30',
-      stats: { total: 156, pending: 12 }
+      stats: { total: 156, pendentes: 12 }
     },
     {
       id: 'excecoes',
@@ -164,7 +164,7 @@ const Relatorio = () => {
       title: 'Relatório de Exceções',
       description: 'Casos de não conformidade e falhas registradas',
       lastUpdate: 'Hoje, 14:20',
-      stats: { total: 5, critical: 2 }
+      stats: { total: 5, críticos: 2 }
     },
     {
       id: 'atividade',
@@ -176,7 +176,7 @@ const Relatorio = () => {
       title: 'Atividade de Usuários',
       description: 'Monitoramento de acessos e padrões de uso',
       lastUpdate: 'Hoje, 16:00',
-      stats: { total: 1245, today: 87 }
+      stats: { total: 1245, hoje: 87 }
     },
     {
       id: 'incidentes',
@@ -190,7 +190,7 @@ const Relatorio = () => {
       title: 'Relatório de Incidentes',
       description: 'Registro e acompanhamento de ocorrências',
       lastUpdate: 'Hoje, 13:45',
-      stats: { total: 22, resolved: 19 }
+      stats: { total: 22, resolvidos: 19 }
     }
   ];
 
@@ -358,7 +358,7 @@ const Relatorio = () => {
             <div className="page-header-content">
               <div className="page-title-wrapper">
                 <h2>Relatórios de Segurança</h2>
-                <span className="page-badge">Dashboard</span>
+                <span className="page-badge">Painel</span>
               </div>
               <p>Acompanhe métricas, conformidade e KPIs do sistema em tempo real</p>
             </div>

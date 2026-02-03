@@ -14,7 +14,7 @@
   --danger: #ef4444;
   --danger-dark: #dc2626;
   --text-primary: #1a1a2e;
-  --text-secondary: #64748b;
+  --text-secondary: #1a1a1a;
   --text-muted: #94a3b8;
   --border: #e2e8f0;
   --bg-light: #f8fafc;
@@ -63,7 +63,7 @@
 }
 
 .page-header p {
-  color: var(--text-secondary);
+  color: #1a1a1a;
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0;
