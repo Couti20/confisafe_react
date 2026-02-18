@@ -30,3 +30,32 @@ img {
   max-width: 100%;
   display: block;
 }
+
+/* =========================
+   PAGE LOADER (Lazy Loading)
+   ========================= */
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0a0f1a;
+  color: #fff;
+  font-size: 18px;
+  gap: 12px;
+}
+
+.page-loader-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 164, 84, 0.3);
+  border-top: 3px solid #00a454;
+  border-radius: 50%;
+  animation: pageLoaderSpin 1s linear infinite;
+}
+
+@keyframes pageLoaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}

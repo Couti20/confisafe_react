@@ -12,22 +12,33 @@
   z-index: 100;
 }
 
-/* Logo */
+/* ===== LOGO ===== */
 .logo {
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 0;
 }
 
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.logo a:hover {
+  opacity: 0.85;
+}
+
 .logo .conf { 
-  color: var(--primary-dark); 
+  color: #1a365d;
 }
 
 .logo .safe { 
-  color: var(--primary-light); 
+  color: #00a454;
 }
 
 /* Menu de Navegação */

@@ -52,11 +52,11 @@
 }
 
 .header-publico .header-logo h1 span:first-child {
-  color: var(--primary);
+  color: #1a365d;
 }
 
 .header-publico .header-logo h1 span:last-child {
-  color: var(--primary-light);
+  color: #00a454;
 }
 
 .header-publico .header-nav {

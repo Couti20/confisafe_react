@@ -49,11 +49,11 @@
 }
 
 .logo-confi {
-  color: var(--primary);
+  color: #1a365d;
 }
 
 .logo-safe {
-  color: var(--primary-light);
+  color: #00a454;
 }
 
 /* Progress Steps */
