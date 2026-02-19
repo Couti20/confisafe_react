@@ -20,9 +20,7 @@ import './styles/servicos.css';
 import './styles/contato.css';
 import './styles/esqueci-senha.css';
 import './styles/inicial.css';
-import './styles/funcionarios.css';
 import './styles/epis.css';
-import './styles/gestao-epis.css';
 import './styles/controle-acesso.css';
 import './styles/treinamento.css';
 import './styles/relatorio.css';
@@ -36,11 +34,9 @@ const Login = lazy(() => import('./pages/Login'));
 const Cadastro = lazy(() => import('./pages/Cadastro'));
 const Contato = lazy(() => import('./pages/Contato'));
 const Inicial = lazy(() => import('./pages/Inicial'));
-const Funcionarios = lazy(() => import('./pages/Funcionarios'));
 const EPIs = lazy(() => import('./pages/EPIs'));
 const ControleAcesso = lazy(() => import('./pages/ControleAcesso'));
 const Treinamento = lazy(() => import('./pages/Treinamento'));
-const GestaoEpis = lazy(() => import('./pages/GestaoEpis'));
 const Relatorio = lazy(() => import('./pages/Relatorio'));
 const Configuracoes = lazy(() => import('./pages/Configuracoes'));
 const EsqueciSenha = lazy(() => import('./pages/EsqueciSenha'));
@@ -92,11 +88,9 @@ function App() {
           
           {/* Rotas Protegidas - Requerem autenticação */}
           <Route path="/inicial" element={<PrivateRoute><Inicial /></PrivateRoute>} />
-          <Route path="/funcionarios" element={<PrivateRoute><Funcionarios /></PrivateRoute>} />
           <Route path="/epis" element={<PrivateRoute><EPIs /></PrivateRoute>} />
           <Route path="/controle-acesso" element={<PrivateRoute><ControleAcesso /></PrivateRoute>} />
           <Route path="/treinamento" element={<PrivateRoute><Treinamento /></PrivateRoute>} />
-          <Route path="/gestao-epis" element={<PrivateRoute><GestaoEpis /></PrivateRoute>} />
           <Route path="/relatorio" element={<PrivateRoute><Relatorio /></PrivateRoute>} />
           <Route path="/configuracoes" element={<PrivateRoute><Configuracoes /></PrivateRoute>} />
           

@@ -12,8 +12,6 @@ const Sidebar = ({ isOpen }) => {
     { path: '/inicial', label: 'Painel Inicial', icon: 'home' },
     { path: '/controle-acesso', label: 'Controle de Acesso', icon: 'lock' },
     { path: '/epis', label: 'Monitoramento EPIs', icon: 'shield' },
-    { path: '/gestao-epis', label: 'Gestão de EPIs', icon: 'box' },
-    { path: '/funcionarios', label: 'Funcionários', icon: 'users' },
     { path: '/treinamento', label: 'Treinamentos', icon: 'book' },
     { path: '/relatorio', label: 'Relatórios', icon: 'chart' },
   ];
