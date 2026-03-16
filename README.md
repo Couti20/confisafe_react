@@ -8,14 +8,12 @@ O sistema conta com **interface web (desktop)** e previsão de **expansão para 
 
 ---
 
-# 👥 Equipe
+## 💼 LinkedIn da Equipe
 
-Equipe responsável pelo desenvolvimento do projeto:
-
-- **Leonam Candido**
-- **Renato Aragao**
-- **Henrique Lourenco**
-- **Michael Coutinho**
+- 🔗 [Leonam Candido](https://linkedin.com/in/leonam-candido)
+- 🔗 [Renato Aragao](https://linkedin.com/in/seu-link)
+- 🔗 [Henrique Lourenco](https://linkedin.com/in/seu-link)
+- 🔗 [Michael Coutinho](https://linkedin.com/in/seu-link)
 
 ---
 
